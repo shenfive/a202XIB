@@ -15,6 +15,7 @@
 		BAE6A52527D44A5E000FD228 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAE6A52327D44A5E000FD228 /* LaunchScreen.storyboard */; };
 		BAE6A52D27D44ABF000FD228 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE6A52C27D44ABF000FD228 /* MyView.swift */; };
 		BAE6A52F27D44B25000FD228 /* MyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAE6A52E27D44B25000FD228 /* MyView.xib */; };
+		BAE6A53327D45940000FD228 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE6A53227D45940000FD228 /* Reachability.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,9 @@
 		BAE6A52627D44A5E000FD228 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAE6A52C27D44ABF000FD228 /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
 		BAE6A52E27D44B25000FD228 /* MyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyView.xib; sourceTree = "<group>"; };
+		BAE6A53027D45940000FD228 /* a202XIB-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "a202XIB-Bridging-Header.h"; sourceTree = "<group>"; };
+		BAE6A53127D45940000FD228 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		BAE6A53227D45940000FD228 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,12 +67,15 @@
 				BAE6A51827D44A5E000FD228 /* AppDelegate.swift */,
 				BAE6A51A27D44A5E000FD228 /* SceneDelegate.swift */,
 				BAE6A51C27D44A5E000FD228 /* ViewController.swift */,
+				BAE6A53127D45940000FD228 /* Reachability.h */,
+				BAE6A53227D45940000FD228 /* Reachability.m */,
 				BAE6A51E27D44A5E000FD228 /* Main.storyboard */,
 				BAE6A52127D44A5E000FD228 /* Assets.xcassets */,
 				BAE6A52327D44A5E000FD228 /* LaunchScreen.storyboard */,
 				BAE6A52627D44A5E000FD228 /* Info.plist */,
 				BAE6A52C27D44ABF000FD228 /* MyView.swift */,
 				BAE6A52E27D44B25000FD228 /* MyView.xib */,
+				BAE6A53027D45940000FD228 /* a202XIB-Bridging-Header.h */,
 			);
 			path = a202XIB;
 			sourceTree = "<group>";
@@ -105,6 +112,7 @@
 				TargetAttributes = {
 					BAE6A51427D44A5E000FD228 = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 					};
 				};
 			};
@@ -149,6 +157,7 @@
 				BAE6A51D27D44A5E000FD228 /* ViewController.swift in Sources */,
 				BAE6A51927D44A5E000FD228 /* AppDelegate.swift in Sources */,
 				BAE6A51B27D44A5E000FD228 /* SceneDelegate.swift in Sources */,
+				BAE6A53327D45940000FD228 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +304,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XSVW22JPST;
@@ -313,6 +323,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = sjw.idv.a202XIB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "a202XIB/a202XIB-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -323,6 +335,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XSVW22JPST;
@@ -341,6 +354,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = sjw.idv.a202XIB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "a202XIB/a202XIB-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

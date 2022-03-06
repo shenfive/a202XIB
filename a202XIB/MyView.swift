@@ -40,7 +40,7 @@ class MyView: UIView {
         self.clipsToBounds = false
         self.layer.shadowRadius = 20         //陰影
         self.layer.shadowOpacity = 0.6;
-        self.layer.shadowColor = UIColor.gray.cgColor
+        self.layer.shadowColor = UIColor.red.cgColor
         self.layer.shadowOffset = CGSize(width: 10, height: 10)
     }
 
