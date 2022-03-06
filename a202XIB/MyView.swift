@@ -9,6 +9,8 @@ import UIKit
 
 class MyView: UIView {
 
+    var view:UIView!
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
@@ -19,8 +21,22 @@ class MyView: UIView {
     }
     
     func setup(){
+        let view = loadViewFromNib()
+        
+        view.frame = self.bounds
+        view.autoresizingMask = [ UIView.AutoresizingMask.flexibleWidth,
+                    UIView.AutoresizingMask.flexibleHeight]
+        self.addSubview(view)
         
     }
+    
+    func loadViewFromNib() -> UIView{
+        let nib = UINib(nibName: "MyView", bundle: nil)
+        let theView = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
+        return theView
+    }
+    
+    
 
 
 }
