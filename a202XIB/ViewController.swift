@@ -13,6 +13,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         let theView = MyView(frame: CGRect(x: 100, y: 100, width: 200, height: 200))
+        theView.theShadow()
         self.view.addSubview(theView)
         
     }
